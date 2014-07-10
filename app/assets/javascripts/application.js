@@ -17,17 +17,17 @@
 //= require projectEdit
 //= require versionCheck
 //= require projectCheck
-//= require githubRefresh
-//= require herokuRefresh
-//= require rubygemsRefresh
+//githubRefresh
+//herokuRefresh
+//rubygemsRefresh
 //= require projectFilters
 
 $(function() {
   BacktraceHide.init();
   VersionCheck.init();
   ProjectCheck.init();
-  GithubRefresh.init();
-  HerokuRefresh.init();
-  RubyGemsRefresh.init();
+//  GithubRefresh.init();
+//  HerokuRefresh.init();
+//  RubyGemsRefresh.init();
   ProjectFilters.init();
 });
