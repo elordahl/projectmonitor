@@ -7,7 +7,7 @@ class TeamCityRestProject < Project
   alias_attribute :project_name, :feed_url
 
   def feed_url
-    url_with_scheme "#{team_city_rest_base_url}/app/rest/builds?locator=running:all,buildType:(id:#{team_city_rest_build_type_id}),personal:false"
+    url_with_scheme "#{team_city_rest_base_url}/app/rest/builds?locator=running:all,buildType:(id:#{team_city_rest_build_type_id}),personal:false,branch:(default:any)"
   end
 
   def fetch_payload
